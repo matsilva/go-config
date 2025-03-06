@@ -1,20 +1,19 @@
+# v1.5.0 / 2024-03-21
 
-v1.4.0 / 2020-04-30
-===================
+- replace deprecated io/ioutil with os package functions
 
-  * add indentation
+# v1.4.0 / 2020-04-30
 
-v1.3.0 / 2019-11-08
-===================
+- add indentation
 
-  * refactor Load() to return nil if the file does not exist
+# v1.3.0 / 2019-11-08
 
-v1.2.0 / 2019-09-27
-===================
+- refactor Load() to return nil if the file does not exist
 
-  * add directory creation to Save()
+# v1.2.0 / 2019-09-27
 
-v1.1.0 / 2019-09-27
-===================
+- add directory creation to Save()
 
-  * add LoadHome() and SaveHome() functions
+# v1.1.0 / 2019-09-27
+
+- add LoadHome() and SaveHome() functions

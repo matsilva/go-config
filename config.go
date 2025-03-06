@@ -3,7 +3,6 @@ package config
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 )
@@ -11,7 +10,7 @@ import (
 // Load configuration from path, into the struct pointer provided. No error is returned
 // if the file does not exist.
 func Load(path string, v interface{}) error {
-	b, err := ioutil.ReadFile(path)
+	b, err := os.ReadFile(path)
 
 	if os.IsNotExist(err) {
 		return nil
@@ -36,7 +35,7 @@ func Save(path string, v interface{}) error {
 		return err
 	}
 
-	return ioutil.WriteFile(path, b, 0600)
+	return os.WriteFile(path, b, 0600)
 }
 
 // LoadHome loads configuration from path relative to the user home directory.

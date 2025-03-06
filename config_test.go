@@ -5,7 +5,7 @@ import (
 
 	"github.com/tj/assert"
 
-	"github.com/tj/go-config"
+	"github.com/matsilva/go-config"
 )
 
 // Config struct.
