@@ -1,4 +1,4 @@
-module github.com/tj/go-config
+module github.com/matsilva/go-config
 
 go 1.12
 
